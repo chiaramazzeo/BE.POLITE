@@ -1,0 +1,51 @@
+/* il box include anche il bordo di tutti gli elementi*/
+
+* {
+  box-sizing:border-box;
+}
+
+.titoloGallery {
+  padding-top: 60px;
+  height: 300px;
+}
+/* occupa tutta larghezza */
+  .colonne {
+    column-count: 3;
+    column-gap: 10px;
+    padding: 10px;
+    padding-top: 0px
+  }
+
+
+
+  /* singola fotografia */
+  .fotogalleria {
+    margin-bottom: 10px;
+    /* spazio sotto */
+  }
+
+.colonne img {
+    width: 100%;
+    /* occupa tutta larghezza */
+  }
+
+  @media (min-width: 768px) {
+    .colonne {
+      position: relative;
+      column-count: 5;
+      column-gap: 10px;
+      padding: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+    @media (max-width: 768px) {
+      .colonne {
+        position: relative;
+        column-count: 1;
+        column-gap: 10px;
+        padding: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+  }
+}
